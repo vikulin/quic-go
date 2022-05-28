@@ -139,7 +139,7 @@ func newPacketHandlerMap(
 				if disable, _ := strconv.ParseBool(os.Getenv("QUIC_GO_DISABLE_RECEIVE_BUFFER_WARNING")); disable {
 					return
 				}
-				log.Printf("%s. See https://github.com/lucas-clemente/quic-go/wiki/UDP-Receive-Buffer-Size for details.", err)
+				log.Printf("%s. See https://github.com/vikulin/quic-go/wiki/UDP-Receive-Buffer-Size for details.", err)
 			})
 		}
 	}
