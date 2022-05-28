@@ -9,7 +9,7 @@ import (
 )
 
 // number of ack-eliciting packets received before sending an ack.
-const packetsBeforeAck = 2
+const packetsBeforeAck = 10
 
 type receivedPacketTracker struct {
 	largestObserved             protocol.PacketNumber
